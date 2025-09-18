@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "build": "vite build",
+  "postbuild": "cpx dist/index.html dist/404.html",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist -r https://github.com/Faizanzahid-166/Rhombix-Technologies.git --dest 02_music_player",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
