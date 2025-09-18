@@ -8,6 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
     ],
-  base: "/Rhombix-Technologies/"
+  base: "/Rhombix-Technologies/01_personal_portfolio/"
 
 })
