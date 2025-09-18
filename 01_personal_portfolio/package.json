@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-     "postbuild": "cpx dist/index.html dist/404.html",
+      "postbuild": "copy dist\\index.html dist\\404.html",
     "deploy": "gh-pages -d dist -r https://github.com/Faizanzahid-166/Rhombix-Technologies.git --dest 01_personal_portfolio",
     "lint": "eslint ."
   },
