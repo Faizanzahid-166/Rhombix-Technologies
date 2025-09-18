@@ -46,7 +46,11 @@ import { TestimonialCard } from "./components/index.js";
     ]  
   }
 
-  ])
+  ],
+  {
+    basename: "/Rhombix-Technologies/01_personal_portfolio", // 👈 Important
+  }
+)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

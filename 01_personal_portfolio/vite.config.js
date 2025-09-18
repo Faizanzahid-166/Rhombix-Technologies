@@ -8,6 +8,13 @@ export default defineConfig({
     react(),
     tailwindcss(),
     ],
-  base: "/Rhombix-Technologies/01_personal_portfolio/"
+  base: "/Rhombix-Technologies/01_personal_portfolio/",
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 
 })
